@@ -1,0 +1,305 @@
+body {
+  padding-top: 80px;
+  min-height: calc(100vh - 90px);
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  background: linear-gradient(to bottom, hsl(180, 18%, 22%), RoyalBlue);
+  color: Seashell;
+}
+
+.mark {
+  text-align: center;
+  font-size: 26px;
+  margin-bottom: 0px;
+}
+
+.review_wrapper {
+  display: flex;
+  text-align: center;
+  max-width: 50%;
+  margin: 0 auto;
+}
+
+.button-review {
+  margin: 0 auto;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  min-height: 60px;
+  display: flex;
+  justify-content: flex-end;
+  background-color: Black;
+}
+
+nav ul {
+  margin: 0;
+  display: flex;
+}
+
+nav a {
+  min-height: 60px;
+  display: block;
+  padding: 10px 20px;
+  line-height: 60px;
+}
+
+li {
+  list-style: none;
+}
+
+ul {
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: White;
+}
+
+.list_stat{
+  text-align: center;
+}
+
+
+article {
+  background-color: MidnightBlue;
+  padding: 10px 20px;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.post .info {
+  justify-content: flex-start;
+  gap: 50px;
+}
+
+h2 a {
+  color: BurlyWood;
+}
+
+form {
+  background-color: linear-gradient(to bottom, hsl(180, 18%, 22%), RoyalBlue);
+  padding: 10px 20px;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+}
+
+form div {
+  margin-bottom: 20px;
+  display: flex;
+}
+
+form div label {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.form-info {
+  justify-content: space-between;
+  gap: 20px;
+}
+
+input,
+textarea {
+  min-height: 30px;
+  border: 1px solid #000;
+  background-color: linear-gradient(to bottom, hsl(180, 18%, 22%), RoyalBlue);
+  color: red;
+  font-size: 18px;
+  padding: 3px 5px;
+  outline: none;
+}
+
+textarea {
+  resize: none;
+  min-height: 150px;
+}
+
+.form-button {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.form-button input {
+  text-transform: uppercase;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.form-button input:hover {
+  background-color: RoyalBlue;
+}
+
+.fa-solid fa-star-sharp {
+  size: 15px;
+}
+
+.home,
+.error {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  background: linear-gradient(to bottom, hsl(180, 18%, 22%), RoyalBlue);
+  color: Aquamarine;
+  padding-top: 0;
+}
+
+.error h1 {
+  margin-top: 0;
+}
+
+.contacts li {
+  list-style-type: circle;
+  padding-left: 20px;
+  list-style-position: inside;
+}
+
+.reviews {
+  margin-block: 1%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.error-code {
+  text-transform: uppercase;
+  font-size: 160px;
+  margin-bottom: 20px;
+}
+
+
+.input {
+	margin-left: 20px;
+}
+
+.btn-edit,
+.btn-delete {
+  position: absolute;
+  top: 10px;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  cursor: pointer;
+  border: 1px solid #000;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  width: 48px;
+  border-radius: 3px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.btn-find {
+    position: absolute;
+    top: 10px;
+    text-transform: uppercase;
+    padding: 9px 15px;
+    cursor: pointer;
+    border: 1px solid #000;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    width: 48px;
+    border-radius: 6px;
+    font-size: 16px;
+    box-sizing: border-box;
+    margin-left: 5px;
+}
+
+.btn-review {
+  font-size: large;
+  right: 10px;
+  position: absolute;
+  height: 40px;
+  top: 10px;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  cursor: pointer;
+  border: 1px solid #000;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  width: 48px;
+  margin-right: 110px;
+  border-radius: 3px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+
+
+.dvach {
+    font-size: 45px;
+    align-content: center;
+    width: 50px;
+    height: 50px;
+    color: #ff6600;
+    text-align: center;
+    margin-top: 15px;
+}
+
+
+.btn-search {
+	font-size: 14px;
+	padding: 9px 9px;
+	margin-top: auto;
+	margin-left: 5px;
+	cursor: pointer;
+	color: MediumBlue;
+}
+
+.btn-search:hover {
+	background-color: SkyBlue;
+}
+
+.button_author_search {
+	text-align: center;
+	height:40px;
+    width: 100%;
+	font-size: 18px;
+	padding: 9px 9px;
+	margin-top: 10px;
+	cursor: pointer;
+	color: MediumBlue;
+}
+
+.button_author_search:hover {
+	background-color: SkyBlue;
+}
+
+.btn-edit {
+	right: 100px;
+	color: Navy;
+	background-color: white;
+}
+
+.btn-edit:hover {
+	background-color: SkyBlue;
+}
+
+.btn-delete {
+	right: 10px;
+	width:5%;
+	color: DarkRed;
+	background-color: white;
+}
+
+.btn-delete:hover {
+	background-color: SkyBlue;
+}

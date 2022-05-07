@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/head.ejs') %>
+    <body>
+        <%- include('./partials/nav.ejs') %>
+            <form id="post-form" method="post" action="/edit/<%= post.id %>?_method=PUT">
+			
+			  	<h3 class="edit">
+					<label style="color: yellow;">Редактирование статьи:</label>
+				</h3>
+			  
+                <div class="form-info">
+                    <label style="color: yellow;">Название<input type="text" name="title" value="<%= post.title %>"></label>
+                    <label style="color: yellow;">Автор статьи<input type="text" name="author" value="<%= post.author %>"></label>
+                </div>
+				
+                <div class="form-text">
+                    <label style="color: yellow;">Текст<textarea name="text"><%= post.text %></textarea></label>
+                </div>
+				
+                <div class="form-button">
+                    <input type="submit" value="Сохранить" style="color: red;">
+                </div>
+				
+            </form>
+    </body>
+</html>

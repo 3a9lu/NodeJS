@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/head.ejs') %>
+	<body>
+		<%- include('./partials/nav.ejs') %>
+			<form id="post-form" method="post" action="/add-post">
+			
+				<div class="form-info">
+					<label style="color: yellow;">Название статьи:
+						<input type="text" name="title">
+					</label>
+				  
+					<label style="color: yellow;">
+						Автор статьи:
+						<input type="text" name="author">
+					</label>
+				  
+					<label style="color: yellow;">Теги:
+						<input type="text" name="tag">
+					</label>
+				</div>
+
+				<div class="form-text">
+					<label style="color: yellow;">Текст статьи:
+						<textarea name="text"></textarea>
+					</label>
+				</div>
+
+				<div class="form-button">
+					<input type="submit" value="Добавить" style="color: red;">
+				</div>
+				
+			</form>
+		</body>
+</html>
